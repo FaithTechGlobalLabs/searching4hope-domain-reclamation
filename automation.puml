@@ -1,0 +1,17 @@
+@startuml
+actor Bob 
+participant Intake
+participant Processor
+participant Worker
+
+Bob -> Intake : Text file
+note left: This file contains a list\n of all the domains we\n would like to create websites for.
+Intake -> Processor : S3 Create Object Event
+group Process File [For each line in file]
+    Processor -> Worker : domain name
+    Worker -> AWS : Create S3 bucket
+    note left: Leverage Terraform
+    AWS -> Populate : S3 bucket created
+    Populate -> AWS : Put HTML file(s)
+end
+@enduml

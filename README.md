@@ -15,9 +15,16 @@ And stored in S3 bucket
 - Terraform, to automate the creation of the S3 buckets
 - Python, to create CName entries in Domain Name Host
 
-
 ## Development Tools
 
+Common Terraform commands
+`terraform`
+
+- `init`
+- `fmt`
+- `validate`
+- `apply`
+- `destroy`
 
 ## Reference Materials
 

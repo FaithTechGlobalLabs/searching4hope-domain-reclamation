@@ -9,6 +9,9 @@ When request is made to populate S3 bucket
 Then HTML template is populated with appropriate content
 And stored in S3 bucket
 
+Given a website in S3 has been provisioned
+Then create CNAME record to associated domain name with bucket name
+
 ## Technologies
 
 - AWS S3, to store and serve the static website
@@ -17,14 +20,14 @@ And stored in S3 bucket
 
 ## Development Tools
 
-Common Terraform commands
-`terraform`
+## How to run terraform scripts
 
-- `init`
-- `fmt`
-- `validate`
-- `apply`
-- `destroy`
+1. `cd terraform`
+2. `terraform init`
+3. `terraform fmt`
+4. `terraform validate`
+5. `terraform apply -var"site_domain=YOUR_SITE_DOMAIN"`
+6. `terraform destroy`
 
 ## Reference Materials
 
@@ -34,7 +37,8 @@ Common Terraform commands
 - [Terraform](https://www.terraform.io/)
 - [Terraform Learn: AWS Infrastructure](https://learn.hashicorp.com/tutorials/terraform/aws-build)
 - [Terraform AWS Provider](https://registry.terraform.io/providers/hashicorp/aws/latest/docs)
-- [Terraform AWS S3 Bucket Module](https://registry.terraform.io/modules/terraform-aws-modules/s3-bucket/aws/latest)
 - [Customize Terraform Configuration with Variables](https://learn.hashicorp.com/tutorials/terraform/variables?in=terraform/configuration-language&utm_source=WEBSITE&utm_medium=WEB_IO&utm_offer=ARTICLE_PAGE&utm_content=DOCS)
+- [Set values with a .tfvars file](https://learn.hashicorp.com/tutorials/terraform/sensitive-variables?in=terraform/configuration-language#set-values-with-a-tfvars-file)
+- [Set values with environment variables](https://learn.hashicorp.com/tutorials/terraform/sensitive-variables?in=terraform/configuration-language#set-values-with-environment-variables)
 
 

@@ -1,9 +1,12 @@
 # Searching4Hope Domain Reclamation Project
 
 How might we create a scalable tech-enabled ministry model for Searching4hope to meet the growing needs of an increasingly desperate world?
+How can we create a scalable, automated solution for creating websites for domains found and purchased that contain content that points the seekers to a Christ centered message as an alternative for what they were originally looking for.
 
 
 * See [Issues](https://github.com/coombsj/searching4hope/issues) for future work * 
+
+Companion project: https://github.com/dwinniford/searching4hope-template-generator
 
 ## Technologies
 

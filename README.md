@@ -12,6 +12,8 @@ And stored in S3 bucket
 Given a website in S3 has been provisioned
 Then create CNAME record to associated domain name with bucket name
 
+* See [Issues](https://github.com/coombsj/searching4hope/issues) for future work * 
+
 ## Technologies
 
 - AWS S3, to store and serve the static website

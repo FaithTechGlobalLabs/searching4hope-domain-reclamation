@@ -1,16 +1,7 @@
 # Searching4Hope Domain Reclamation Project
 
-Given a list of domains have been identified and purchased
-When the list is dropped in an S3 bucket
-Then the list is parsed and a website is created for each domain in the list
+How might we create a scalable tech-enabled ministry model for Searching4hope to meet the growing needs of an increasingly desperate world?
 
-Given a website in S3 has been provisioned
-When request is made to populate S3 bucket
-Then HTML template is populated with appropriate content
-And stored in S3 bucket
-
-Given a website in S3 has been provisioned
-Then create CNAME record to associated domain name with bucket name
 
 * See [Issues](https://github.com/coombsj/searching4hope/issues) for future work * 
 

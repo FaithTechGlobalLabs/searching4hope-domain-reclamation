@@ -4,7 +4,7 @@ metadata:
   name: searching4hope-domain-reclamation
   description: Testing
   annotations:
-    circleci.com/project-slug: github/cooombsj/searching4hope-domain-reclamation
+    circleci.com/project-slug: coombsj/searching4hope-domain-reclamation
     github.com/project-slug: coombsj/searching4hope-domain-reclamation
   labels:
     data-classification: public
